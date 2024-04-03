@@ -1,0 +1,11 @@
+[
+  {
+    "TheQuestion": "Welke 2 landen werden zwaar getroffen door een aardbeving in februari?",
+    "CorrectAnswer": "Turkije en Syri\u00EB",
+    "WrongAnswerOne": "Japan en Hawa\u00EF",
+    "WrongAnswerTwo": "Bulgarije en Griekenland",
+    "WrongAnswerThree": "Belgi\u00EB en Nederland",
+    "QuestionDisplayTime": 0,
+    "Timer": null
+  }
+]

@@ -1,0 +1,450 @@
+﻿<Window x:Class="Groepsproject_Blokken.FrmPlayerscreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Groepsproject_Blokken"
+        mc:Ignorable="d"
+        Title="FrmPlayerscreen"
+        Height="720" Width="1280" MinHeight="720" MinWidth="1280"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border BorderThickness="8"
+                                Width="{TemplateBinding Width}"
+                                Height="{TemplateBinding Height}"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="25"
+                                BorderBrush="#fea702">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" />
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                                     Value="true">
+
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation To="230"
+                                                             Storyboard.TargetProperty="Width"
+                                                             Duration="0:0:0.3" />
+                                            <DoubleAnimation To="90"
+                                                             Storyboard.TargetProperty="Height"
+                                                             Duration="0:0:0.3" />
+                                            <ColorAnimation To="#0D0080"
+                                                            Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
+                                                            Duration="0:0:0.3" />
+                                            <ColorAnimation To="WhiteSmoke"
+                                                            Storyboard.TargetProperty="Foreground.(SolidColorBrush.Color)"
+                                                            Duration="0:0:0.3" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation To="200"
+                                                             Storyboard.TargetProperty="Width"
+                                                             Duration="0:0:0.3" />
+                                            <DoubleAnimation To="60"
+                                                             Storyboard.TargetProperty="Height"
+                                                             Duration="0:0:0.3" />
+                                            <ColorAnimation To="#fea702"
+                                                            Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
+                                                            Duration="0:0:0.3" />
+                                            <ColorAnimation To="Black"
+                                                            Storyboard.TargetProperty="Foreground.(SolidColorBrush.Color)"
+                                                            Duration="0:0:0.3" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Blokken achtergrond Hi Res.jpg"
+                        Stretch="UniformToFill" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Image x:Name="BlokkenLogo" Grid.ColumnSpan="2" Grid.Column="1" Source="/Assets/BlokkenLogo2.png" VerticalAlignment="Top" >
+            <Image.RenderTransform>
+                <TranslateTransform/>
+            </Image.RenderTransform>
+
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="BlokkenLogo" Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.Y)"
+                            From="0" To="-85" Duration="0:0:2" DecelerationRatio="0.9"
+                            AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+
+                </EventTrigger>
+                <EventTrigger RoutedEvent="ScrollBar.Scroll">
+                    <BeginStoryboard>
+                        <Storyboard x:Name="BlokkenLogoTerug">
+                            <DoubleAnimation Storyboard.TargetName="BlokkenLogo" Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.Y)"
+                            From="-85" To="0" Duration="0:0:2" AccelerationRatio="0.9"
+                            AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+
+        </Image>
+
+        <Border Grid.Column="2" Grid.ColumnSpan="2" CornerRadius="50" BorderBrush="#0D0080" BorderThickness="8" Margin="50,100,50,0" Name="RechtseBorder">
+            <Border.Background>
+                <ImageBrush x:Name="imgProfilePic" Stretch="Fill"/>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TranslateTransform></TranslateTransform>
+            </Border.RenderTransform>
+            <Border.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard x:Name="RechtseBorderBinnen">
+                            <DoubleAnimation Storyboard.TargetName="RechtseBorder" Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.X)"
+                            From="800" To="0" Duration="0:0:2" DecelerationRatio="0.8"
+                            AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="RechtseBorder" Storyboard.TargetProperty="(Image.Opacity)"
+From="0" To="1" Duration="0:0:2" DecelerationRatio="0.8"
+AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+
+                </EventTrigger>
+                <EventTrigger RoutedEvent="ScrollBar.Scroll">
+                    <BeginStoryboard>
+                        <Storyboard x:Name="RechtseBorderTerug">
+                            <DoubleAnimation Storyboard.TargetName="RechtseBorder" Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.X)"
+                            From="0" To="800" Duration="0:0:2" AccelerationRatio="0.8"
+                            AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="RechtseBorder" Storyboard.TargetProperty="(Image.Opacity)"
+From="1" To="0" Duration="0:0:2" AccelerationRatio="0.8"
+AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Border.Triggers>
+        </Border>
+
+
+
+        <StackPanel Name="StackPanelVolume" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="300" Height="50"  Background="#fea702"  Orientation="Horizontal" MouseEnter="sliderVolume_MouseEnter" MouseLeave="sliderVolume_MouseLeave" Opacity="0.3">
+            <Slider x:Name="sliderVolume" Grid.Column="2" HorizontalAlignment="Left" Width="210" Height="50" ValueChanged="sliderVolume_ValueChanged" Maximum="100" Minimum="0" Value="99" Margin="15" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Image x:Name="imgVolume" Source="Assets/Icon High.png" Width="50" Height="50" HorizontalAlignment="Right" Stretch="UniformToFill"></Image>
+
+        </StackPanel>
+
+        <Border Grid.ColumnSpan="2" CornerRadius="50" BorderBrush="#0D0080" BorderThickness="8" Margin="50,100,50,0" Background="#fea702" Opacity="0.8" Name="LinkseBorder">
+            <Border.RenderTransform>
+                <TranslateTransform></TranslateTransform>
+            </Border.RenderTransform>
+            <Border.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard x:Name="LinkseBorderBinnen">
+                            <DoubleAnimation Storyboard.TargetName="LinkseBorder" Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.X)"
+                            From="-800" To="0" Duration="0:0:2" DecelerationRatio="0.8"
+                            AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="LinkseBorder" Storyboard.TargetProperty="(Image.Opacity)"
+From="0" To="1" Duration="0:0:2" DecelerationRatio="0.8"
+AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+
+                </EventTrigger>
+                <EventTrigger RoutedEvent="ScrollBar.Scroll">
+                    <BeginStoryboard>
+                        <Storyboard x:Name="LinkseBorderTerug">
+                            <DoubleAnimation Storyboard.TargetName="LinkseBorder" Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.X)"
+                            From="0" To="-800" Duration="0:0:2" AccelerationRatio="0.8"
+                            AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="LinkseBorder" Storyboard.TargetProperty="(Image.Opacity)"
+From="1" To="0" Duration="0:0:2" AccelerationRatio="0.8"
+AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Border.Triggers>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Label Content="Naam:"
+                   FontSize="20" 
+                   x:Name="lblNaam"
+                   FontWeight="Bold"
+                   FontFamily="{StaticResource BlokkenFont}" 
+                       VerticalContentAlignment="Center"/>
+                <Label Content="Highscore SP:"
+                   FontSize="20" 
+                   x:Name="lblHighscoreSP"
+                   FontWeight="Bold"
+                   FontFamily="{StaticResource BlokkenFont}" 
+                   Grid.Row="1"
+                   VerticalContentAlignment="Center"/>
+                <Label Content="Highscore VS:"
+                   FontSize="20" 
+                   x:Name="lblHighscoreVS"
+                   FontWeight="Bold"
+                   FontFamily="{StaticResource BlokkenFont}"
+                   Grid.Row="2"
+                   VerticalContentAlignment="Center"/>
+                <Label Content="Games gespeeld SP:"
+                   FontSize="20" 
+                   x:Name="lblGamesGespeeldSP"
+                   FontWeight="Bold"
+                   FontFamily="{StaticResource BlokkenFont}"
+                   Grid.Row="3"
+                   VerticalContentAlignment="Center"/>
+                <Label Content="Games gespeeld VS:"
+                   FontSize="20" 
+                   x:Name="lblGamesGespeeldVS"
+                   FontWeight="Bold"
+                   FontFamily="{StaticResource BlokkenFont}" 
+                   Grid.Row="4"
+                   VerticalContentAlignment="Center"/>
+                <Label Content="Winrate SP:"
+                   FontSize="20"
+                   x:Name="lblWinrateSP"
+                   FontWeight="Bold"
+                   FontFamily="{StaticResource BlokkenFont}"
+                   Grid.Row="5"
+                   VerticalContentAlignment="Center"/>
+                <Label Content="Winrate VS:"
+                   FontSize="20"
+                   x:Name="lblWinrateVS"
+                   FontWeight="Bold"
+                   FontFamily="{StaticResource BlokkenFont}"
+                   Grid.Row="6"
+                   VerticalContentAlignment="Center"/>
+                <Label Content="NAAM"
+       FontSize="20"
+       x:Name="lblNaamDisp"
+       Opacity="1"
+       FontWeight="Bold"
+       FontFamily="{StaticResource BlokkenFont}" Grid.Column="1" VerticalContentAlignment="Center" />
+                <Label Content="0"
+       FontSize="20"
+       x:Name="lblHighscoreSPDisp"
+       FontWeight="Bold"
+       FontFamily="{StaticResource BlokkenFont}" Grid.Column="1" Grid.Row="1" VerticalContentAlignment="Center" />
+                <Label Content="0"
+       FontSize="20"
+       x:Name="lblHighscoreVSDisp"
+       FontWeight="Bold"
+       FontFamily="{StaticResource BlokkenFont}" Grid.Column="1" Grid.Row="2" VerticalContentAlignment="Center"/>
+                <Label Content="0"
+       FontSize="20"
+       Name="lblGamesGespeeldSPDisp"
+       FontWeight="Bold"
+       FontFamily="{StaticResource BlokkenFont}" Grid.Column="1" Grid.Row="3" VerticalContentAlignment="Center" />
+                <Label Content="0"
+       FontSize="20"
+       x:Name="lblGamesGespeeldVSDisp"
+       FontWeight="Bold"
+       FontFamily="{StaticResource BlokkenFont}" Grid.Column="1" Grid.Row="4" VerticalContentAlignment="Center" />
+                <Label Content="0"
+       FontSize="20"
+       Name="lblWinrateSPDisp"
+       FontWeight="Bold"
+       FontFamily="{StaticResource BlokkenFont}" Grid.Column="1" Grid.Row="5" VerticalContentAlignment="Center" />
+                <Label Content="0"
+       FontSize="20"
+       x:Name="lblWinrateVSDisp"
+       FontWeight="Bold"
+       FontFamily="{StaticResource BlokkenFont}" Grid.Column="1" Grid.Row="6" VerticalContentAlignment="Center"/>
+            </Grid>
+        </Border>
+
+
+
+        <Image x:Name="BerndCrabbe" Grid.RowSpan ="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Source="Assets/BerndCrabbe NoBackGround.png"  Stretch="Uniform" Grid.ColumnSpan="2" Margin="50,0,0,0" Width="427">
+            <Image.RenderTransform>
+                <TranslateTransform/>
+            </Image.RenderTransform>
+
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard x:Name="BerndCrabbeWeg">
+                            <DoubleAnimation Storyboard.TargetName="BerndCrabbe" Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.X)"
+                            From="0" To="-400" Duration="0:0:2" AccelerationRatio="0.8"
+                            AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="BerndCrabbe" Storyboard.TargetProperty="(Image.Opacity)"
+From="1" To="0" Duration="0:0:2" AccelerationRatio="0.8"
+AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+
+                </EventTrigger>
+                <EventTrigger RoutedEvent="ScrollBar.Scroll">
+                    <BeginStoryboard>
+                        <Storyboard x:Name="BerndCrabbeTerug">
+                            <DoubleAnimation Storyboard.TargetName="BerndCrabbe" Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.X)"
+                            From="-400" To="0" Duration="0:0:2" DecelerationRatio="0.8"
+                            AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="BerndCrabbe" Storyboard.TargetProperty="(Image.Opacity)" From="0" To="1" Duration="0:0:2" AccelerationRatio="0.8"
+AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+
+        <!--Dit zijn de labels-->
+        <StackPanel Grid.Row="1"
+                    Grid.ColumnSpan="4"
+                    Orientation="Horizontal"
+                    Name="StackPanel">
+            <StackPanel.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="StackPanel" Storyboard.TargetProperty="Opacity"
+                From="0" To="1" Duration="0:0:2" DecelerationRatio="0.9"
+                AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="ScrollBar.Scroll">
+                    <BeginStoryboard>
+                        <Storyboard x:Name="StackPanelButtonsWeg">
+                            <DoubleAnimation Storyboard.TargetName="StackPanel" Storyboard.TargetProperty="Opacity"
+From="1" To="0" Duration="0:0:1" DecelerationRatio="0.9"
+AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </StackPanel.Triggers>
+            <Button x:Name="btnReturn"
+                    Content="Return"
+                    Width="200"
+                    Height="60"
+                    FontSize="25"
+                    Margin="0,0,0,2"
+                    Click="btnReturn_Click"
+                    Background="#fea702"
+                    Foreground="Black"
+                    FontFamily="{StaticResource BlokkenFont}">
+
+            </Button>
+            <Button x:Name="btnWijzigWW"
+                    Content="WW Wijzigen"
+                    Width="200"
+                    Height="60"
+                    FontSize="25"
+                    Margin="0,0,0,5"
+                    Click="btnWijzigWW_Click"
+                    Background="#fea702"
+                    Foreground="Black"
+                    FontFamily="{StaticResource BlokkenFont}">
+
+            </Button>
+            <Button x:Name="btnWijzigPFP"
+                    Content="PFP Wijzigen"
+                    Width="200"
+                    Height="60"
+                    FontSize="25"
+                    Margin="0,0,0,5"
+                    Click="btnWijzigPFP_Click"
+                    Background="#fea702"
+                    Foreground="Black"
+                    FontFamily="{StaticResource BlokkenFont}">
+
+            </Button>
+            <Button x:Name="btnShare"
+                    Content="Share"
+                    Width="150"
+                    Height="60"
+                    FontSize="25"
+                    Click="btnShare_Click"
+                    Background="#fea702"
+                    Foreground="Black"
+                    FontFamily="{StaticResource BlokkenFont}">
+
+            </Button>
+        </StackPanel>
+
+        <!--Dit zijn buttons-->
+        <Grid x:Name="InputBox"
+              Visibility="Collapsed"
+              Grid.RowSpan="4"
+              Grid.ColumnSpan="4">
+            <Grid Background="Black"
+                  Opacity="0.5" />
+            <Border MinWidth="250"
+                    Background="Orange"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    CornerRadius="0,55,0,55"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Margin="5"
+                               Text="Input Box:"
+                               FontWeight="Bold"
+                               FontFamily="Cambria" />
+                    <TextBox MinWidth="150"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center"
+                             x:Name="InputTextBox" />
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center">
+                        <Button x:Name="YesButton"
+                                Margin="5"
+                                Content="Wijzig"
+                                Style="{x:Null}"
+                                Click="YesButton_Click" />
+                        <Button x:Name="NoButton"
+                                Margin="5"
+                                Content="Annuleer"
+                                Style="{x:Null}"
+                                Click="NoButton_Click" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+        </Grid>
+        <!--Dit is de popupbox bij WW wijzigen-->
+    </Grid>
+</Window>

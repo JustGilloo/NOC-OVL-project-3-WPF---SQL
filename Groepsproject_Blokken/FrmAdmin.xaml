@@ -1,0 +1,102 @@
+﻿<Window x:Class="Groepsproject_Blokken.FrmAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Groepsproject_Blokken"
+        mc:Ignorable="d"
+        Title="FrmAdmin" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:Manager/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#000047"/>
+        </Grid.Background>
+        <TabControl>
+            <TabControl.Resources>
+                <Style TargetType="TabItem">
+                    <Setter Property="Background" Value="#fea702"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="FontFamily" Value="{StaticResource BlokkenFont}"/>
+                </Style>
+                <Style TargetType="TabPanel">
+                    <Setter Property="Background" Value="DarkBlue"/>
+                </Style>
+            </TabControl.Resources>
+            <TabItem Header="Manager aanmaken">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="Assets/Blokken achtergrond Hi Res.jpg"/>
+                    </Grid.Background>
+
+                    <Label Content="Gebruikersnaam:" FontFamily="{StaticResource BlokkenFont}" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                    <TextBox x:Name="txtUsername" Text="{Binding NameValidation, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Grid.Column="2" Width="175" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="25"/>
+                    <Label x:Name="lblUsernameDataInfo" Content="{Binding (Validation.Errors)[0].ErrorContent, ElementName=txtUsername}" Grid.Column="3" Grid.Row="0" Background="#fea702" Foreground="Red" HorizontalContentAlignment="Left" VerticalAlignment="Center" Margin="25" FontWeight="Bold"/>
+                    <Label Content="Wachtwoord:" FontFamily="{StaticResource BlokkenFont}" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                    <TextBox x:Name="txtPassword" Text="{Binding PasswordValidation, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="2" Width="175" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="25"/>
+                    <Label x:Name="lblPasswordDataInfo" Content="{Binding (Validation.Errors)[0].ErrorContent, ElementName=txtPassword}" Grid.Column="3" Grid.Row="1" Background="#fea702" Foreground="Red" HorizontalContentAlignment="Left" VerticalAlignment="Center" Margin="25" FontWeight="Bold"/>
+                    <Label Content="Wachtwoord bevestigen:" FontFamily="{StaticResource BlokkenFont}" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                    <TextBox x:Name="txtConfirmPassword" Text="{Binding PasswordConfirmValidation, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="2" Width="175" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="25"/>
+                    <Label x:Name="lblPasswordConfirmDataInfo" Content="{Binding (Validation.Errors)[0].ErrorContent, ElementName=txtConfirmPassword}" Grid.Column="3" Grid.Row="2" Background="#fea702" Foreground="Red" HorizontalContentAlignment="Left" VerticalAlignment="Center" Margin="25" FontWeight="Bold"/>
+                    <Button x:Name="btnCreateManager" Content="MANAGER AANMAKEN" Background="#fea702" FontFamily="{StaticResource BlokkenFont}" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" Height="25" Width="150" Margin="25" Click="btnCreateManager_Click" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="15"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Manager wijzigen">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="146*"/>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="199*"></ColumnDefinition>
+                        <ColumnDefinition Width="199*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="Assets/Blokken achtergrond Hi Res.jpg"/>
+                    </Grid.Background>
+                    <ListBox x:Name="lstManagers" ItemsSource="{Binding Name}" Grid.Row="0" Grid.Column="4" Grid.RowSpan="4" Grid.ColumnSpan="2"  Margin="25" FontFamily="{StaticResource BlokkenFont}" Background="#fea702" Foreground="White" FontWeight="Bold" BorderThickness="0" />
+                    <Label Content="Gebruikersnaam:" Grid.ColumnSpan="2" FontFamily="{StaticResource BlokkenFont}" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                    <TextBox x:Name="txtUsername2" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Width="175" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="25"/>
+                    <Label Content="Wachtwoord:" Grid.ColumnSpan="2" FontFamily="{StaticResource BlokkenFont}" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="30"/>
+                    <TextBox x:Name="txtPassword2" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="2" Width="175" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="25"/>
+                    <Button x:Name="btnBack" Content="TERUG" Background="#fea702" FontFamily="{StaticResource BlokkenFont}"  Grid.Row="3" Grid.Column="3" HorizontalAlignment="Left" Height="25" Width="100" Margin="25" Click="btnBack_Click" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="15"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

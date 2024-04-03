@@ -1,0 +1,50 @@
+[
+  {
+    "SpelerID": 0,
+    "Name": "Berndje",
+    "Password": "123",
+    "ProfilePicture": "../../Profielfotos/default.jpg",
+    "SPHighscore": 350,
+    "SPGamesPlayed": 5,
+    "SPGamesWon": 3,
+    "VSHighscore": 2,
+    "VSGamesPlayed": 17,
+    "VSGamesWon": 5
+  },
+  {
+    "SpelerID": 0,
+    "Name": "Illyave",
+    "Password": "12",
+    "ProfilePicture": "../../Profielfotos/FMY_P5-WUAQzA3q.jpg",
+    "SPHighscore": 350,
+    "SPGamesPlayed": 1,
+    "SPGamesWon": 1,
+    "VSHighscore": 200,
+    "VSGamesPlayed": 7,
+    "VSGamesWon": 5
+  },
+  {
+    "SpelerID": 0,
+    "Name": "A",
+    "Password": "A",
+    "ProfilePicture": "../../Profielfotos/default.jpg",
+    "SPHighscore": null,
+    "SPGamesPlayed": null,
+    "SPGamesWon": null,
+    "VSHighscore": 0,
+    "VSGamesPlayed": 2,
+    "VSGamesWon": null
+  },
+  {
+    "SpelerID": 0,
+    "Name": "splGilles",
+    "Password": "123",
+    "ProfilePicture": "../../Profielfotos/gilles_profiel.png",
+    "SPHighscore": 450,
+    "SPGamesPlayed": 2,
+    "SPGamesWon": 1,
+    "VSHighscore": 250,
+    "VSGamesPlayed": 5,
+    "VSGamesWon": null
+  }
+]

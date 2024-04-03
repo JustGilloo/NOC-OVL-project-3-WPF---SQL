@@ -1,0 +1,179 @@
+﻿<Window x:Class="Groepsproject_Blokken.FrmLoginRegister"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Groepsproject_Blokken"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="FrmLoginRegister"
+        Height="400"
+        Width="650"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Blokken achtergrond Hi Res.jpg"
+                        Stretch="UniformToFill" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.427*" />
+            <ColumnDefinition Width="1.618*" />
+            <ColumnDefinition Width="0.809*" />
+            <ColumnDefinition Width="1.618*" />
+            <ColumnDefinition Width="0.809*" />
+        </Grid.ColumnDefinitions>
+
+
+        <TextBox Name="txtUsername"
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 Width="200"
+                 Text="Gebruikersnaam"
+                 Foreground="LightSlateGray"
+                 FontFamily="{StaticResource BlokkenFont}"
+                 GotFocus="txtUsername_GotFocus" />
+
+
+        <PasswordBox Name="txtPassword"
+                     Grid.Row="3"
+                     Grid.Column="1"
+                     Width="200"
+                     Foreground="LightSlateGray"
+                     Password="Wachtwoord"
+                     FontFamily="{StaticResource BlokkenFont}"
+                     GotFocus="txtPassword_GotFocus" />
+
+        <Button Name="btnAanmelden"
+                Grid.Row="4"
+                Grid.Column="1"
+                Grid.RowSpan="2"
+                Grid.ColumnSpan="2"
+                Content="AANMELDEN"
+                Width="100"
+                Background="#fea702"
+                FontFamily="{StaticResource BlokkenFont}"
+                FontSize="12.0"
+                FontStyle="Normal"
+                FontWeight="Bold"
+                Click="btnAanmelden_Click"
+                MouseEnter="btnAanmelden_MouseEnter"
+                MouseLeave="btnAanmelden_MouseLeave"
+                IsDefault="True">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius"
+                            Value="15" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Name="btnRegistreren"
+                Grid.Row="2"
+                Grid.Column="2"
+                Content="REGISTREREN"
+                Background="#fea702"
+                FontFamily="{StaticResource BlokkenFont}"
+                FontSize="12.0"
+                FontStyle="Normal"
+                FontWeight="Bold"
+                Click="btnRegistreren_Click"
+                MouseEnter="btnRegistreren_MouseEnter"
+                MouseLeave="btnRegistreren_MouseLeave"
+                Grid.ColumnSpan="3"
+                Height="18"
+                Margin="72,0,72,0"
+                VerticalAlignment="Bottom">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius"
+                            Value="15" />
+                </Style>
+            </Button.Resources>
+
+        </Button>
+        <Button Name="btnDoorgaanAlsGast"
+                Grid.Row="4"
+                Grid.Column="3"
+                Content="DOORGAAN ALS GAST"
+                Width="auto"
+                Background="#fea702"
+                FontFamily="{StaticResource BlokkenFont}"
+                FontSize="10.0"
+                FontStyle="Normal"
+                FontWeight="Bold"
+                Click="btnDoorgaanAlsGast_Click"
+                MouseEnter="btnDoorgaanAlsGast_MouseEnter"
+                MouseLeave="btnDoorgaanAlsGast_MouseLeave">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius"
+                            Value="15" />
+                </Style>
+            </Button.Resources>
+
+        </Button>
+        <Image Source="/Assets/Blokken Logo.png"
+               Grid.RowSpan="9"
+               Stretch="Uniform">
+            <Image.RenderTransform>
+                <ScaleTransform ScaleX="1"
+                                ScaleY="1" />
+            </Image.RenderTransform>
+            <Image.Style>
+                <Style TargetType="Image">
+                    <Setter Property="RenderTransformOrigin"
+                            Value="0.5,0.5" />
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="Image.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                                     From="1"
+                                                     To="1.5"
+                                                     Duration="0:0:5"
+                                                     AutoReverse="True"
+                                                     RepeatBehavior="Forever" />
+                                    <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                                     From="1"
+                                                     To="1.5"
+                                                     Duration="0:0:5"
+                                                     AutoReverse="True"
+                                                     RepeatBehavior="Forever" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Image.Style>
+
+        </Image>
+        <Rectangle Grid.Column="2"
+                   Height="120"
+                   HorizontalAlignment="Center"
+                   Grid.RowSpan="9"
+                   Stroke="#fea702"
+                   VerticalAlignment="Center"
+                   Width="2"
+                   Fill="#fea702"
+                   RadiusX="1"
+                   RadiusY="1" />
+        <TextBlock FontFamily="{StaticResource BlokkenFont}"
+                   Text="Nog geen account?"
+                   Grid.Column="3"
+                   Foreground="WhiteSmoke"
+                   HorizontalAlignment="Center"
+                   Margin="0,123,0,1" />
+    </Grid>
+</Window>
+

@@ -1,0 +1,72 @@
+﻿<Window x:Class="Groepsproject_Blokken.FrmQuizWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Groepsproject_Blokken"
+        mc:Ignorable="d"
+        Title="FrmQuizWindow"
+        Height="450"
+        Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock Name="txtScore" Text="0" Background="#fea702" FontFamily="{StaticResource BlokkenFont}" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" Width="38"/>
+        <TextBlock Name="txtVraag" Text="Vraag" Background="#fea702" FontFamily="{StaticResource BlokkenFont}" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,144,0,0" Width="800" TextWrapping="Wrap" Height="53">
+            <TextBlock.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius"
+                Value="80" />
+                </Style>
+            </TextBlock.Resources>
+        </TextBlock>
+        <StackPanel Margin="0,245,0,0" Orientation="Vertical">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnAntwoord1" Content="Antwoord1" Click="btnAntwoord1_Click" Grid.Column="0" Grid.Row="0"  Background="#fea702" FontFamily="{StaticResource BlokkenFont}" Height="85" Margin="5" MouseEnter="btnAntwoord1_MouseEnter" MouseLeave="btnAntwoord1_MouseLeave">
+
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius"
+                Value="80" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Name="btnAntwoord2" Content="Antwoord2" Click="btnAntwoord2_Click" Grid.Column="1" Grid.Row="0"  Background="#fea702" FontFamily="{StaticResource BlokkenFont}" Margin="4" MouseEnter="btnAntwoord2_MouseEnter" MouseLeave="btnAntwoord2_MouseLeave">
+
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius"
+Value="80" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Name="btnAntwoord3" Content="Antwoord3" Click="btnAntwoord3_Click" Grid.Column="0" Grid.Row="1"  Background="#fea702" FontFamily="{StaticResource BlokkenFont}" Height="85" Margin="5" MouseEnter="btnAntwoord3_MouseEnter" MouseLeave="btnAntwoord3_MouseLeave" >
+
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius"
+Value="80" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Name="btnAntwoord4" Content="Antwoord4" Click="btnAntwoord4_Click" Grid.Column="1" Grid.Row="1"  Background="#fea702" FontFamily="{StaticResource BlokkenFont}" Margin="5" MouseEnter="btnAntwoord4_MouseEnter" MouseLeave="btnAntwoord4_MouseLeave">
+
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius"
+Value="80" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+        </StackPanel>
+    </Grid>
+
+</Window>

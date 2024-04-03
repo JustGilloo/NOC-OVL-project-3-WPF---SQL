@@ -1,0 +1,178 @@
+[
+  {
+    "TheQuestion": "Welke 2 landen werden zwaar getroffen door een aardbeving in februari?",
+    "CorrectAnswer": "Turkije en Syri\u00EB",
+    "WrongAnswerOne": "Japan en Hawa\u00EF",
+    "WrongAnswerTwo": "Bulgarije en Griekenland",
+    "WrongAnswerThree": "Belgi\u00EB en Nederland",
+    "QuestionID": 1
+  },
+  {
+    "TheQuestion": "Welk land trad vanaf 01/01/2023 toe tot de eurozone en de Schengenzone?",
+    "CorrectAnswer": "Kroati\u00EB",
+    "WrongAnswerOne": "Ukra\u00EFne",
+    "WrongAnswerTwo": "Nederland",
+    "WrongAnswerThree": "Turkij\u00EB",
+    "QuestionID": 2
+  },
+  {
+    "TheQuestion": "Om welke reden werd een jong stel in Iran veroordeeld tot 10 jaar cel?",
+    "CorrectAnswer": "Het online zetten van een dans video",
+    "WrongAnswerOne": "Een seks-schandaal",
+    "WrongAnswerTwo": "Rascistische opmerkingen geroepen",
+    "WrongAnswerThree": "Wegens zelf abortus",
+    "QuestionID": 3
+  },
+  {
+    "TheQuestion": "Welke bekende Amerikaanse bank wordt in maart 2023 failliet verklaard?",
+    "CorrectAnswer": "Silicon Valley Bank",
+    "WrongAnswerOne": "National Bank",
+    "WrongAnswerTwo": "JPMorgan Chase",
+    "WrongAnswerThree": "Citigroup",
+    "QuestionID": 4
+  },
+  {
+    "TheQuestion": "Op 5 maart 2023 werd een historisch VN-verdrag beklonken, waar ging dit over?",
+    "CorrectAnswer": "Bescherming van de oceanen",
+    "WrongAnswerOne": "Bescherming van vluchtelingen",
+    "WrongAnswerTwo": "Bescherming van bossen",
+    "WrongAnswerThree": "Bescherming van kinderrechten",
+    "QuestionID": 5
+  },
+  {
+    "TheQuestion": "Welk land trad in april 2023 officieel toe tot de NAVO?",
+    "CorrectAnswer": "Finland",
+    "WrongAnswerOne": "Kroati\u00EB",
+    "WrongAnswerTwo": "Ijsland",
+    "WrongAnswerThree": "Ukra\u00EFne",
+    "QuestionID": 6
+  },
+  {
+    "TheQuestion": "Waardoor raakte de Dalai Lama in jaar 2023 in opspraak?",
+    "CorrectAnswer": "Hij vroeg een jongetje om aan zijn tong te zuigen",
+    "WrongAnswerOne": "Hij ging schaars gekleed naar een gebed",
+    "WrongAnswerTwo": "Hij sprak een verkeerd politiek getinte mening",
+    "WrongAnswerThree": "Hij had een relatie met een vertegenwoordige",
+    "QuestionID": 7
+  },
+  {
+    "TheQuestion": "Na demonstraties wordt in Frankrijk de pensioenleeftijd toch verhoogd. Naar welke leeftijd?",
+    "CorrectAnswer": "64",
+    "WrongAnswerOne": "65",
+    "WrongAnswerTwo": "66",
+    "WrongAnswerThree": "63",
+    "QuestionID": 8
+  },
+  {
+    "TheQuestion": "Welke voormalig Europees president wordt veroordeeld voor corruptie?",
+    "CorrectAnswer": "De Franse ex-president Nicolas Sarkozy",
+    "WrongAnswerOne": "Roberta Metsola",
+    "WrongAnswerTwo": "Charles Michel",
+    "WrongAnswerThree": "Donald Tusk",
+    "QuestionID": 9
+  },
+  {
+    "TheQuestion": "Van welke tegenstander verliest Inter Milaan de finale van de UEFA Champions League 2023?",
+    "CorrectAnswer": "Manchester City",
+    "WrongAnswerOne": "Barcelona",
+    "WrongAnswerTwo": "Porto",
+    "WrongAnswerThree": "Arsenal",
+    "QuestionID": 10
+  },
+  {
+    "TheQuestion": "Welk land werd door hevige regenval getroffen door aardverschuivingen?",
+    "CorrectAnswer": "Sloveni\u00EB",
+    "WrongAnswerOne": "Oostenrijk",
+    "WrongAnswerTwo": "Kroati\u00EB",
+    "WrongAnswerThree": "Servi\u00EB",
+    "QuestionID": 13
+  },
+  {
+    "TheQuestion": "Hoe heet Donald Trump zijn eigen social-media kanaal?",
+    "CorrectAnswer": "Truth Social",
+    "WrongAnswerOne": "Maga News",
+    "WrongAnswerTwo": "The Real News",
+    "WrongAnswerThree": "True News",
+    "QuestionID": 14
+  },
+  {
+    "TheQuestion": "Welke munt gebruikte Kroatie vroeger?",
+    "CorrectAnswer": "Kuna",
+    "WrongAnswerOne": "Tolar",
+    "WrongAnswerTwo": "Koruna",
+    "WrongAnswerThree": "Tula",
+    "QuestionID": 15
+  },
+  {
+    "TheQuestion": "Welk land is sinds 2023 de meest bevolkte land?",
+    "CorrectAnswer": "India",
+    "WrongAnswerOne": "Indonesi\u00EB",
+    "WrongAnswerTwo": "Brazili\u00EB",
+    "WrongAnswerThree": "Japan",
+    "QuestionID": 16
+  },
+  {
+    "TheQuestion": "Welk kledingstuk had Mary Quant ontworpen?",
+    "CorrectAnswer": "Hotpants",
+    "WrongAnswerOne": "String",
+    "WrongAnswerTwo": "Nylonkousen",
+    "WrongAnswerThree": "Push-up Bra",
+    "QuestionID": 17
+  },
+  {
+    "TheQuestion": "Wat was Jevgeni Progozjin zijn job voor Wagner?",
+    "CorrectAnswer": "Poetin\u0027s kok",
+    "WrongAnswerOne": "Poetin\u0027s tolk",
+    "WrongAnswerTwo": "KGB Spion",
+    "WrongAnswerThree": "Poetin\u0027s chauffeur",
+    "QuestionID": 18
+  },
+  {
+    "TheQuestion": "Welke producer schreef de muziek voor \u2018Barbie\u2019?",
+    "CorrectAnswer": "Mark Ronson",
+    "WrongAnswerOne": "Jack Antonoff",
+    "WrongAnswerTwo": "Linda Perry",
+    "WrongAnswerThree": "Sia",
+    "QuestionID": 19
+  },
+  {
+    "TheQuestion": "Wout van Aert werd vader in 2023. Hoe heet het kind?",
+    "CorrectAnswer": "Georges",
+    "WrongAnswerOne": "Jerome",
+    "WrongAnswerTwo": "Mathis",
+    "WrongAnswerThree": "L\u00E9on",
+    "QuestionID": 20
+  },
+  {
+    "TheQuestion": "Van welke voetballer van \u0027Busby Babes\u0027 namen we afscheid?",
+    "CorrectAnswer": "Bobby Charlton",
+    "WrongAnswerOne": "Denis Law",
+    "WrongAnswerTwo": "Peter Schmeichel",
+    "WrongAnswerThree": "Alex Stepney",
+    "QuestionID": 21
+  },
+  {
+    "TheQuestion": "Waar kwam de ballon vandaan die boven VS Millitaire basses hing?",
+    "CorrectAnswer": "China",
+    "WrongAnswerOne": "Rusland",
+    "WrongAnswerTwo": "Noord-Korea",
+    "WrongAnswerThree": "Verenigde Staten",
+    "QuestionID": 22
+  },
+  {
+    "TheQuestion": "Frank Deboosere vertrekt. Welk nieuw gezicht volgt hem op? ",
+    "CorrectAnswer": "Jacotte Brokken",
+    "WrongAnswerOne": "Jacotte Hagedoren",
+    "WrongAnswerTwo": "Jacotte Verbruggen",
+    "WrongAnswerThree": "Jacotte Cracotte",
+    "QuestionID": 23
+  },
+  {
+    "TheQuestion": "Loreen wint het Eurovisiesongfestival met welk nummer?",
+    "CorrectAnswer": "Tattoo",
+    "WrongAnswerOne": "Euphoria",
+    "WrongAnswerTwo": "Erop of eronder",
+    "WrongAnswerThree": "I\u0027m in it with you",
+    "QuestionID": 24
+  }
+]

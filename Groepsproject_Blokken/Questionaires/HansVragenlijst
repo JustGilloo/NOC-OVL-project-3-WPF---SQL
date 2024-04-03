@@ -1,0 +1,282 @@
+[
+  {
+    "TheQuestion": "Wat was de naam van het bedrijf bij Illya\u0027s eerste project-voorstelling ?",
+    "CorrectAnswer": "Vehicom",
+    "WrongAnswerOne": "Vehibikes",
+    "WrongAnswerTwo": "Vehicum",
+    "WrongAnswerThree": "Vehicome",
+    "QuestionID": 3
+  },
+  {
+    "TheQuestion": "Wat is de naam van Illya\u0027s hond?",
+    "CorrectAnswer": "Zorro",
+    "WrongAnswerOne": "Lassie",
+    "WrongAnswerTwo": "Bieke",
+    "WrongAnswerThree": "Fluffy",
+    "QuestionID": 4
+  },
+  {
+    "TheQuestion": "Wat is Illya\u0027s meest gespeelde videogame?",
+    "CorrectAnswer": "World of Warcraft",
+    "WrongAnswerOne": "Path of Exile",
+    "WrongAnswerTwo": "Final Fantasy",
+    "WrongAnswerThree": "League of Legends",
+    "QuestionID": 5
+  },
+  {
+    "TheQuestion": "In welke stad woonde Cedric voor hij aan de cursus begon? ",
+    "CorrectAnswer": "Berlijn",
+    "WrongAnswerOne": "Bern",
+    "WrongAnswerTwo": "Bergen",
+    "WrongAnswerThree": "Bertem",
+    "QuestionID": 6
+  },
+  {
+    "TheQuestion": "Wat voor soort muziek van Cedric staat niet op spotify?",
+    "CorrectAnswer": "Vlaamse rap",
+    "WrongAnswerOne": "Duitse poprock",
+    "WrongAnswerTwo": "Zweede schlager",
+    "WrongAnswerThree": "Italiaanse house",
+    "QuestionID": 7
+  },
+  {
+    "TheQuestion": "Hoeveel bordspelletjes heeft Cedric in zijn collectie?",
+    "CorrectAnswer": "266",
+    "WrongAnswerOne": "66",
+    "WrongAnswerTwo": "166",
+    "WrongAnswerThree": "366",
+    "QuestionID": 8
+  },
+  {
+    "TheQuestion": "Hoeveel bedraagt de schermdiagonaal van Cedric zijn scherm?",
+    "CorrectAnswer": "49 inch",
+    "WrongAnswerOne": "32 inch",
+    "WrongAnswerTwo": "42 inch",
+    "WrongAnswerThree": "57 inch",
+    "QuestionID": 9
+  },
+  {
+    "TheQuestion": "Wat is de naam van Robin\u0027s hond?",
+    "CorrectAnswer": "Kai",
+    "WrongAnswerOne": "Zorro",
+    "WrongAnswerTwo": "Hond",
+    "WrongAnswerThree": "Lassie",
+    "QuestionID": 10
+  },
+  {
+    "TheQuestion": "Met wat voor merk rijd Robin?",
+    "CorrectAnswer": "Opel Corsa",
+    "WrongAnswerOne": "Een Kevertje",
+    "WrongAnswerTwo": "Volkswagen",
+    "WrongAnswerThree": "Een Porsche",
+    "QuestionID": 11
+  },
+  {
+    "TheQuestion": "Waar woont Robin?",
+    "CorrectAnswer": "Lochristi",
+    "WrongAnswerOne": "Gent",
+    "WrongAnswerTwo": "Brussel",
+    "WrongAnswerThree": "De kartonnen doos onder de brug",
+    "QuestionID": 12
+  },
+  {
+    "TheQuestion": "Wat is Robin zijn IQ? (stel je voor dat je zo ijdel bent dat je daarmee stoeft)",
+    "CorrectAnswer": "128",
+    "WrongAnswerOne": "5",
+    "WrongAnswerTwo": "133",
+    "WrongAnswerThree": "102",
+    "QuestionID": 13
+  },
+  {
+    "TheQuestion": "Wie is Robin zijn aartsvijand?",
+    "CorrectAnswer": "Bernd",
+    "WrongAnswerOne": "Said",
+    "WrongAnswerTwo": "zijn hond",
+    "WrongAnswerThree": "Iedereen",
+    "QuestionID": 14
+  },
+  {
+    "TheQuestion": "Wat is Robin zijn lievelingsgerecht?",
+    "CorrectAnswer": "Stoofvlees met frietjes",
+    "WrongAnswerOne": "Croque Monsieur",
+    "WrongAnswerTwo": "Blinde Vink",
+    "WrongAnswerThree": "Boontjes in Tomatensaus",
+    "QuestionID": 15
+  },
+  {
+    "TheQuestion": "Waar woont Bart?",
+    "CorrectAnswer": "Dendermonde",
+    "WrongAnswerOne": "Luik",
+    "WrongAnswerTwo": "Gent",
+    "WrongAnswerThree": "Brugge",
+    "QuestionID": 16
+  },
+  {
+    "TheQuestion": "Wat is Bart zijn lievelingsgerecht?",
+    "CorrectAnswer": "Spaghetti Bolognese",
+    "WrongAnswerOne": "Stoofvlees",
+    "WrongAnswerTwo": "Kip met appelmoes",
+    "WrongAnswerThree": "Boterham met choco",
+    "QuestionID": 17
+  },
+  {
+    "TheQuestion": "Hoeveel mensen in de klas NOC OVL 2023 heeft hun rijbewijs?",
+    "CorrectAnswer": "4",
+    "WrongAnswerOne": "1",
+    "WrongAnswerTwo": "3",
+    "WrongAnswerThree": "7",
+    "QuestionID": 18
+  },
+  {
+    "TheQuestion": "Hoeveel uren spendeerde Said dagelijks met door zijn venster naar buiten te staren?",
+    "CorrectAnswer": "8",
+    "WrongAnswerOne": "4",
+    "WrongAnswerTwo": "6",
+    "WrongAnswerThree": "10",
+    "QuestionID": 19
+  },
+  {
+    "TheQuestion": "Hoeveel percent zagen we gemiddeld van Said zijn hoofd?",
+    "CorrectAnswer": "33",
+    "WrongAnswerOne": "20",
+    "WrongAnswerTwo": "50",
+    "WrongAnswerThree": "100",
+    "QuestionID": 20
+  },
+  {
+    "TheQuestion": "Welke vorm heeft Tycho zijn tattoo?",
+    "CorrectAnswer": "Vos",
+    "WrongAnswerOne": "Vis",
+    "WrongAnswerTwo": "een anime character",
+    "WrongAnswerThree": "Vogel",
+    "QuestionID": 21
+  },
+  {
+    "TheQuestion": "Waaraan is Tycho verslaafd?",
+    "CorrectAnswer": "Gacha games",
+    "WrongAnswerOne": "Snoepjes",
+    "WrongAnswerTwo": "Sterke mannen in strakke businesspakken",
+    "WrongAnswerThree": "Ijsberen",
+    "QuestionID": 22
+  },
+  {
+    "TheQuestion": "Hoeveel katten heeft Tycho?",
+    "CorrectAnswer": "3",
+    "WrongAnswerOne": "1",
+    "WrongAnswerTwo": "5",
+    "WrongAnswerThree": "8",
+    "QuestionID": 23
+  },
+  {
+    "TheQuestion": "Wie is Bernd zijn aartsvijand?",
+    "CorrectAnswer": "Robin",
+    "WrongAnswerOne": "Bernd zelf",
+    "WrongAnswerTwo": "Zijn vrouw",
+    "WrongAnswerThree": "Bart",
+    "QuestionID": 24
+  },
+  {
+    "TheQuestion": "Hoeveel dieren heeft Bernd?",
+    "CorrectAnswer": "5",
+    "WrongAnswerOne": "2",
+    "WrongAnswerTwo": "9",
+    "WrongAnswerThree": "7",
+    "QuestionID": 25
+  },
+  {
+    "TheQuestion": "Hoeveel planten heeft Bernd zijn vrouw?",
+    "CorrectAnswer": "\u002B80",
+    "WrongAnswerOne": "70",
+    "WrongAnswerTwo": "60",
+    "WrongAnswerThree": "50",
+    "QuestionID": 26
+  },
+  {
+    "TheQuestion": "Wie is de tofste leerling van de klas?",
+    "CorrectAnswer": "De toffe Bernd",
+    "WrongAnswerOne": "De vervelende Robin",
+    "WrongAnswerTwo": "De saaie Robin",
+    "WrongAnswerThree": "Het klein kindje Robin",
+    "QuestionID": 27
+  },
+  {
+    "TheQuestion": "Hoe noemde het team van Robin tijdens het project?",
+    "CorrectAnswer": "Team Cool",
+    "WrongAnswerOne": "Team Tarzan",
+    "WrongAnswerTwo": "Team Awesome",
+    "WrongAnswerThree": "Team Robin",
+    "QuestionID": 28
+  },
+  {
+    "TheQuestion": "Hoe noemde het team van Bernd tijdens het project?",
+    "CorrectAnswer": "Team Terminator",
+    "WrongAnswerOne": "Team DeMAX",
+    "WrongAnswerTwo": "Team Bernd",
+    "WrongAnswerThree": "Team Technisch",
+    "QuestionID": 29
+  },
+  {
+    "TheQuestion": "Wat gaf je volgens Elina de beste kans op een succesvolle sollicitatie?",
+    "CorrectAnswer": "Een hond hebben",
+    "WrongAnswerOne": "Een knap gezicht hebben",
+    "WrongAnswerTwo": "Slim en vlot zijn",
+    "WrongAnswerThree": "Playing \u0022Hard to get\u0022",
+    "QuestionID": 30
+  },
+  {
+    "TheQuestion": "Wie maakt de meeste vreemde mopjes?",
+    "CorrectAnswer": "Bernd",
+    "WrongAnswerOne": "Cedric",
+    "WrongAnswerTwo": "Jeffrey",
+    "WrongAnswerThree": "Tycho",
+    "QuestionID": 31
+  },
+  {
+    "TheQuestion": "Welke voetbal ploeg stimuleert Abdul?",
+    "CorrectAnswer": "Barcelona",
+    "WrongAnswerOne": "Real Madrid",
+    "WrongAnswerTwo": "Liverpool",
+    "WrongAnswerThree": "Byren",
+    "QuestionID": 32
+  },
+  {
+    "TheQuestion": "Welke taal heeft Gilles geen enkele kennis van?",
+    "CorrectAnswer": "Portugees",
+    "WrongAnswerOne": "Spaans",
+    "WrongAnswerTwo": "Japans",
+    "WrongAnswerThree": "Ijslands",
+    "QuestionID": 33
+  },
+  {
+    "TheQuestion": "Welk feit over Gilles is niet waar?",
+    "CorrectAnswer": "Hij speelt gitaar, piano en saxofoon",
+    "WrongAnswerOne": "Hij was vice-Europees karatekampioen in zijn leeftijdscategorie",
+    "WrongAnswerTwo": "Hij heeft koningin Mathilde ge\u00EFnterviewd",
+    "WrongAnswerThree": "Hij bezit een collectie retrogames en consoles",
+    "QuestionID": 34
+  },
+  {
+    "TheQuestion": "Wat is Gilles\u0027 favoriete gerecht?",
+    "CorrectAnswer": "Marokaanse tajine",
+    "WrongAnswerOne": "Lasagne",
+    "WrongAnswerTwo": "Chilli Con Carne",
+    "WrongAnswerThree": "Vol-au-vent",
+    "QuestionID": 35
+  },
+  {
+    "TheQuestion": "Hoe breed is Bart zijn nek?",
+    "CorrectAnswer": "Een kleine pitta met mayo en samurai zonder tomaten",
+    "WrongAnswerOne": "Omtrek van een molensteen",
+    "WrongAnswerTwo": "Lengte van een 30cm salami",
+    "WrongAnswerThree": "Dikte van een winterband van een volkswagen",
+    "QuestionID": 36
+  },
+  {
+    "TheQuestion": "Wat is Bernd zijn favorite hobby?",
+    "CorrectAnswer": "Warhammer 40k miniature game",
+    "WrongAnswerOne": "Naar de vrouwen kijken",
+    "WrongAnswerTwo": "Gaming",
+    "WrongAnswerThree": "Mensen pesten",
+    "QuestionID": 37
+  }
+]

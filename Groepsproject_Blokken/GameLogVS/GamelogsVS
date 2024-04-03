@@ -1,0 +1,65 @@
+[
+  {
+    "GameID": 0,
+    "Player1Name": "splGilles",
+    "Player1Score": 100,
+    "Player2Name": "Illyave",
+    "Player2Score": 250,
+    "Winner": "Illyave",
+    "Date": "0001-01-01T00:00:00"
+  },
+  {
+    "GameID": 0,
+    "Player1Name": "Illyave",
+    "Player1Score": 50,
+    "Player2Name": "splGilles",
+    "Player2Score": -200,
+    "Winner": "Illyave",
+    "Date": "0001-01-01T00:00:00"
+  },
+  {
+    "GameID": 0,
+    "Player1Name": "splGilles",
+    "Player1Score": 250,
+    "Player2Name": "Illyave",
+    "Player2Score": 0,
+    "Winner": "splGilles",
+    "Date": "0001-01-01T00:00:00"
+  },
+  {
+    "GameID": 0,
+    "Player1Name": "splGilles",
+    "Player1Score": -350,
+    "Player2Name": "Illyave",
+    "Player2Score": 0,
+    "Winner": "Illyave",
+    "Date": "0001-01-01T00:00:00"
+  },
+  {
+    "GameID": 0,
+    "Player1Name": "splGilles",
+    "Player1Score": 150,
+    "Player2Name": "Illyave",
+    "Player2Score": 200,
+    "Winner": "Illyave",
+    "Date": "0001-01-01T00:00:00"
+  },
+  {
+    "GameID": 0,
+    "Player1Name": "A",
+    "Player1Score": -250,
+    "Player2Name": "Illyave",
+    "Player2Score": 100,
+    "Winner": "Illyave",
+    "Date": "0001-01-01T00:00:00"
+  },
+  {
+    "GameID": 0,
+    "Player1Name": "A",
+    "Player1Score": 0,
+    "Player2Name": "Illyave",
+    "Player2Score": -250,
+    "Winner": "A",
+    "Date": "0001-01-01T00:00:00"
+  }
+]

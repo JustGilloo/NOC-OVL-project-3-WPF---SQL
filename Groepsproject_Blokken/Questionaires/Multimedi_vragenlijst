@@ -1,0 +1,10 @@
+[
+  {
+    "QuestionID": 4,
+    "TheQuestion": "Welke programeertaal wordt door Multimedi aangeleerd?",
+    "CorrectAnswer": "Javascript",
+    "WrongAnswerOne": "Java",
+    "WrongAnswerTwo": "Python",
+    "WrongAnswerThree": "Ruby"
+  }
+]

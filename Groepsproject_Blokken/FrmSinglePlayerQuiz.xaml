@@ -1,0 +1,153 @@
+﻿<Window x:Class="Groepsproject_Blokken.FrmSinglePlayerQuiz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Groepsproject_Blokken"
+        mc:Ignorable="d"
+        Title="FrmSinglePlayerQuiz" Height="720" Width="1280" MinHeight="720" MinWidth="1280"
+        WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown" Loaded="Window_Loaded">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetProperty="(Window.Opacity)"
+                        From="0.0" To="1.0" Duration="0:0:1"
+                        AutoReverse="False"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource="\Assets\Background SinglePlayer.png" Stretch="Fill"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="102*"></ColumnDefinition>
+            <ColumnDefinition Width="157*"></ColumnDefinition>
+            <ColumnDefinition Width="36*"></ColumnDefinition>
+            <ColumnDefinition Name="Middelkolom" Width="350*"></ColumnDefinition>
+            <ColumnDefinition Width="155*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"></RowDefinition>
+            <RowDefinition Height="84*"></RowDefinition>
+            <RowDefinition Name="ScoreEnTimerTabel" Height="16*"></RowDefinition>
+            <RowDefinition Name="AntwoordenTabel" Height="100*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--<Label Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Name="txtScore" HorizontalAlignment="Center" VerticalAlignment="Stretch" Content="Score" FontFamily="{StaticResource BlokkenFont}" Background="#fea702" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center" FontWeight="Bold" Opacity="0.8"></Label>-->
+        <!--<Rectangle Grid.Column="4" Grid.RowSpan="3" Stroke="#fea702" Height="{Binding ActualHeight, ElementName=BerndCrabbeIdleAnimation}" Width="auto" Opacity="0.8" Fill="#fea702"></Rectangle>-->
+        
+        <Label Grid.RowSpan="3" Grid.Column="4" x:Name="lblTimerEnScore" HorizontalAlignment="Right" VerticalAlignment="Stretch" Content="Score: 0 Timer: 120" FontFamily="{StaticResource BlokkenFont}" Background="#fea702" Width="{Binding ActualWidth, ElementName=BerndCrabbeIdleAnimation}" Opacity="0.8" HorizontalContentAlignment="Center" VerticalContentAlignment ="Bottom" FontWeight="Bold"></Label>
+        <StackPanel Grid.Row="1" Grid.Column="1" Grid.RowSpan="5" Orientation="Vertical" Margin="0,30,0,0">
+            <Viewbox>
+            <Canvas x:Name="GameCanvas" Width="550" Height="1100" Background="#101010" ClipToBounds="True" Loaded="GameCanvas_Loaded" Visibility="Visible"/>
+        </Viewbox>
+            <Label x:Name="lblPrimeword"  Foreground="AntiqueWhite" Grid.Row="1" FontSize="30" FontFamily="{StaticResource BlokkenFont}" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+        </StackPanel>
+        
+            <Grid Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Name="HoogteAntwoorden" Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            <Button Name="btnAntwoord1" Click="btnAntwoord1_Click" Grid.Column="0" Grid.Row="0"  Background="#fea702" FontFamily="{StaticResource BlokkenFont}" MinHeight="60" Margin="5" MouseEnter="btnAntwoord1_MouseEnter" MouseLeave="btnAntwoord1_MouseLeave" Opacity="0.8" FontSize="20" Visibility="Hidden">
+                <TextBlock Text="" TextWrapping="Wrap" TextAlignment="Center"/>
+
+                <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius"
+                Value="80" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            <Button Name="btnAntwoord2"  Click="btnAntwoord2_Click" Grid.Column="1" Grid.Row="0"  Background="#fea702" FontFamily="{StaticResource BlokkenFont}" Margin="4" MouseEnter="btnAntwoord2_MouseEnter" MouseLeave="btnAntwoord2_MouseLeave" Opacity="0.8" FontSize="20" Visibility="Hidden">
+                <TextBlock Text="" TextWrapping="Wrap" TextAlignment="Center"/>
+
+                <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius"
+Value="80" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            <Button Name="btnAntwoord3" Click="btnAntwoord3_Click" Grid.Column="0" Grid.Row="1"  Background="#fea702" FontFamily="{StaticResource BlokkenFont}" MinHeight="60" Margin="5" MouseEnter="btnAntwoord3_MouseEnter" MouseLeave="btnAntwoord3_MouseLeave" Opacity="0.8" FontSize="20" Visibility="Hidden">
+                <TextBlock Text="" TextWrapping="Wrap" TextAlignment="Center"/>
+
+                <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius"
+Value="80" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            <Button Name="btnAntwoord4" Click="btnAntwoord4_Click" Grid.Column="1" Grid.Row="1"  Background="#fea702" FontFamily="{StaticResource BlokkenFont}" Margin="5" MouseEnter="btnAntwoord4_MouseEnter" MouseLeave="btnAntwoord4_MouseLeave" Opacity="0.8" FontSize="20" Visibility="Hidden">
+                <TextBlock Text="" TextWrapping="Wrap" TextAlignment="Center"/>
+
+                <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius"
+Value="80" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+        
+        <Rectangle Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Stroke="#fea702" Height="{Binding ActualHeight, ElementName=BerndCrabbeIdleAnimation}" Width="auto" Opacity="0.8" Fill="#fea702"></Rectangle>
+        <!--<TextBlock Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" FontSize="20" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#fea702" Height="{Binding ActualHeight, ElementName=BerndCrabbeIdleAnimation}" Width="{Binding Width, ElementName=Middelkolom}" Opacity="0.8" FontFamily="{StaticResource BlokkenFont}">
+            
+        </TextBlock>-->
+        <TextBlock Name="txtVraag" Grid.Column="3" Grid.RowSpan="2" FontSize="25" VerticalAlignment="Center" Text ="" HorizontalAlignment="Center"  FontFamily="{StaticResource BlokkenFont}" Foreground="Black" TextWrapping="Wrap" />
+
+
+
+
+        <MediaElement Name="BerndCrabbeIdleAnimation" Grid.Column="4" Grid.RowSpan="2" Stretch="Uniform" HorizontalAlignment="Right">
+
+            <MediaElement.Triggers>
+                <EventTrigger RoutedEvent="ScrollBar.Scroll">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <MediaTimeline Storyboard.TargetName="BerndCrabbeIdleAnimation" RepeatBehavior="Forever" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </MediaElement.Triggers>
+        </MediaElement>
+
+        <Grid x:Name="grdGameOver" Background="#CC000000" Grid.RowSpan="5" Grid.ColumnSpan="5" Visibility="Hidden">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Game Over" FontSize="48" TextAlignment="Center" Foreground="White"/>
+                <TextBlock x:Name="txtFinalScore" Text="Score: " FontSize="32" TextAlignment="Center" Foreground="White"/>
+                <TextBox x:Name="txtPrimeword" Margin="0,20,0,0" Padding="5"/>
+                <Button x:Name="btnPrimewordGuess"
+                        Content="Primeword raden"
+                        Background="#fea702"
+                        Margin="0,20,0,0" Padding="5" Click="btnPrimewordGuess_Click"/>
+                <Button x:Name="btnPlayAgain"
+                        Content="Opnieuw spelen"
+                        Background="#fea702"
+                        Margin="0,20,0,0" Padding="5" Click="btnPlayAgain_Click"/>
+                <Button x:Name="btnShare"
+                        Content="Share"
+                        Background="#fea702"
+                        Margin="0,20,0,0" Padding="5" Click="btnShare_Click"/>
+            </StackPanel>
+        </Grid>
+        
+        <!--TODO DIT BETER PLAATSEN-->
+        <Label x:Name="lblHint" Content="Hint" Foreground="AntiqueWhite" FontSize="45" Grid.Row="4" VerticalContentAlignment="Center" Grid.Column="3" FontFamily="{StaticResource BlokkenFont}" Margin="0,40,0,0" FontWeight="Bold" Visibility="Hidden"/>
+        
+        <!--TODO DIT BETER PLAATSEN-->
+        
+    </Grid>
+</Window>
